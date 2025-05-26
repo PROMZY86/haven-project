@@ -1,0 +1,151 @@
+*{
+  box-sizing: border-box;  
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: all 0.3s ;
+  scroll-behavior: smooth;
+  font-family: var(  --font-family-1);
+}
+
+body{
+    height: 2000px; /* To enable scrolling */
+}
+
+.whiskey-menu-section {
+  padding: 60px 20px;
+  background-color: var(--main-site-hdr);
+}
+
+.whiskey-menu-container {
+    max-width: 880px;
+   display: grid;
+   margin: 0 auto;
+   align-items: center;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.menu-image {
+  max-width: 300px; 
+}
+
+.menu-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu-list {
+  max-width: 300px;
+  text-align: center;
+   margin-left:0 -50px;
+}
+
+.menu-list h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: var(--main-site-h1-h2);
+}
+
+.menu-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-list li {
+  margin-bottom: 12px;
+  font-size: 13px;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .whiskey-menu-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu-list h2 {
+    text-align: center;
+  }
+
+  .menu-image{
+    max-width: 1000px;
+  }
+
+    .menu-image img{
+        width: 100%;
+        position: static;
+    } 
+
+}
+
+
+/*  */
+.drinks-section {
+  /* /* display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  border: 1px solid #333; */
+  border: 1px solid green; 
+  padding: 60px 20px;
+
+}
+
+.menu-column {
+
+   max-width: 500px;
+  /* min-width: 280px; */
+  padding: 15px;
+  border: 1px solid #999;
+  box-sizing: border-box;
+}
+
+.drinks-section-container{
+   border: 1px solid blue;
+   max-width: 800px;
+   margin: 0 auto;
+   display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+.menu-column h2 {
+  color: var(--main-site-h1-h2);
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.menu-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-column ul li {
+  padding: 6px 0;
+  font-size: 13px;
+
+  border-bottom: 1px solid #ddd;
+}
+
+
+@media (max-width: 768px) {
+.drinks-section-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menu-column {
+     width: 100%;
+  
+  }
+}

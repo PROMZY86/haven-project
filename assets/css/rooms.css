@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   text-decoration: none;
+   transition: all 0.3s ;
+   scroll-behavior: smooth;
+   font-family: var(  --font-family-1);
+  
+}
+
+.element-rooms-section{
+  overflow: hidden;
+  position: relative;
+  margin-top: 70px;
+}
+
+.element-rooms-section .element-rooms-section-container {
+     height: 500px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.element-rooms-section .element-rooms-section-container 
+.element-rooms-section-content {
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.element-rooms-section .element-rooms-section-container 
+.element-rooms-section-content img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.element-rooms-section .element-rooms-section-container 
+.element-rooms-section-content .element-rooms-section-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.element-rooms-section .element-rooms-section-container 
+.element-rooms-section-content .element-rooms-section-content-text {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 500;
+    width: 100%;
+}
+
+.element-rooms-section .element-rooms-section-container 
+.element-rooms-section-content .element-rooms-section-content-text h1{
+     font-size: var(  --main-site-font-max-size);
+    color: var(--main-site-h1-h2);
+    font-weight: var(--main-site-font-weight);   
+    margin-top: 2rem;
+    word-spacing: 8px;
+}
+
+.element-rooms-section .element-rooms-section-container 
+.element-rooms-section-content .element-rooms-section-content-text  p{
+  color: var(--main-site-hdr);
+  word-spacing: 2px;
+  margin-top: -95px;
+  font-size: var(--main-site-font-size);
+}
+
+
+  @media (max-width: 430px){
+  .element-rooms-section .element-rooms-section-container 
+.element-rooms-section-content .element-rooms-section-content-text h1 {
+    margin-top: 8rem;
+    word-spacing: 20px;
+  }   
+}  
+
+  @media (max-width: 360px){
+  .element-rooms-section .element-rooms-section-container 
+.element-rooms-section-content .element-rooms-section-content-text h1 {
+     font-size: 60px;
+     margin-top:  5rem;
+     word-spacing: 18px;
+  }   
+}  
