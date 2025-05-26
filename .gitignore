@@ -1,0 +1,19 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore environment config (if using PHP, WAMP etc.)
+.env
+
+# Ignore compiled files
+*.class
+*.pyc
+
+# Ignore node modules (if you use Node.js later)
+node_modules/
+
+# Ignore WAMP/Server-specific files (if needed)
+wampserver.conf
